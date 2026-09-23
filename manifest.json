@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "1.0.0",
+  "description": "__MSG_extDesc__",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Headmap",
+    "default_icon": {
+      "16": "ikon-16.png",
+      "32": "ikon-32.png",
+      "48": "ikon-48.png",
+      "128": "ikon-128.png"
+    }
+  },
+  "icons": {
+    "16": "ikon-16.png",
+    "32": "ikon-32.png",
+    "48": "ikon-48.png",
+    "128": "ikon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "default_locale": "en"
+}

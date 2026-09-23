@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+	<header class="toolbar">
+		<label class="switch">
+			<input type="checkbox" id="highlight" />
+			<span class="switch-track" aria-hidden="true"></span>
+			<span data-i18n="highlight">Highlight headings</span>
+		</label>
+		<div class="actions">
+			<button type="button" id="copy-text" class="primary" data-i18n="copyText" data-i18n-title="copyTextHint">Copy as text</button>
+			<button type="button" id="copy-table" data-i18n="copyTable" data-i18n-title="copyTableHint">Copy as table</button>
+		</div>
+	</header>
+
+	<main id="report">
+		<p class="muted" data-i18n="reading">Reading the page…</p>
+	</main>
+
+	<p id="toast" class="toast" role="status" hidden></p>
+	<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+/* Headmap's own palette: a deep teal accent on neutral greys. The heading
+   badges use a separate, fixed scale so H-levels read the same everywhere. */
+:root {
+	--bg: #fcfcfb;
+	--surface: #f1f3f2;
+	--line: #e1e5e3;
+	--ink: #16201d;
+	--muted: #5c6b66;
+	--accent: #0f766e;
+	--accent-ink: #ffffff;
+	--warn: #c2410c;
+	--h1: #26282e;
+	--h2: #d97a00;
+	--h3: #1f8a3a;
+	--h4: #2563c9;
+	--h5: #7c4dcc;
+	--h6: #8a8f98;
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #121816;
+		--surface: #1a221f;
+		--line: #2b3531;
+		--ink: #eef3f1;
+		--muted: #9aaaa4;
+		--accent: #2dd4bf;
+		--accent-ink: #062521;
+		--warn: #fb923c;
+		--h1: #e8eaee;
+		color-scheme: dark;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 540px;
+	max-height: 600px;
+	margin: 0;
+	background: var(--bg);
+	color: var(--ink);
+	font: 14px/1.45 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.toolbar {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.6rem;
+	padding: 0.7rem 0.9rem;
+	border-bottom: 1px solid var(--line);
+	background: var(--bg);
+}
+
+.actions {
+	display: flex;
+	gap: 0.4rem;
+}
+
+button {
+	padding: 0.4rem 0.75rem;
+	border: 1px solid var(--line);
+	border-radius: 8px;
+	background: var(--bg);
+	color: var(--ink);
+	font: inherit;
+	font-size: 12.5px;
+	font-weight: 600;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: border-color 0.15s;
+}
+
+button:hover {
+	border-color: var(--muted);
+}
+
+button:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+button.primary {
+	border-color: var(--accent);
+	background: var(--accent);
+	color: var(--accent-ink);
+}
+
+.switch {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45rem;
+	font-size: 13px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.switch input {
+	position: absolute;
+	opacity: 0;
+}
+
+.switch-track {
+	position: relative;
+	width: 30px;
+	height: 17px;
+	border-radius: 999px;
+	background: var(--line);
+	transition: background 0.15s;
+}
+
+.switch-track::after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #fff;
+	transition: transform 0.15s;
+}
+
+.switch input:checked + .switch-track {
+	background: var(--accent);
+}
+
+.switch input:checked + .switch-track::after {
+	transform: translateX(13px);
+}
+
+.switch input:focus-visible + .switch-track {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+main {
+	max-height: 540px;
+	padding: 0.8rem 0.9rem 1rem;
+	overflow-y: auto;
+}
+
+.field {
+	margin-bottom: 0.75rem;
+}
+
+.label {
+	display: flex;
+	align-items: baseline;
+	gap: 0.5rem;
+	margin: 0 0 0.15rem;
+	color: var(--muted);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.count {
+	font-weight: 500;
+	font-variant-numeric: tabular-nums;
+}
+
+.count.over {
+	color: var(--warn);
+}
+
+.value {
+	margin: 0;
+	word-break: break-word;
+}
+
+.value.missing {
+	color: var(--warn);
+	font-style: italic;
+}
+
+.summary {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.3rem 0.7rem;
+	margin: 0.2rem 0 0.8rem;
+	padding: 0.5rem 0.65rem;
+	border-radius: 10px;
+	background: var(--surface);
+	font-size: 12px;
+	font-variant-numeric: tabular-nums;
+}
+
+.warning {
+	color: var(--warn);
+	font-weight: 600;
+}
+
+.outline {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.outline li {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.45rem;
+	padding: 0.22rem 0;
+}
+
+.indent {
+	flex: none;
+	color: var(--line);
+	font-size: 11px;
+	line-height: 20px;
+	letter-spacing: 2px;
+}
+
+.skipped .indent {
+	color: var(--warn);
+}
+
+.badge {
+	flex: none;
+	min-width: 26px;
+	padding: 1px 5px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 11.5px;
+	font-weight: 800;
+	line-height: 18px;
+	text-align: center;
+}
+
+.h1 { background: var(--h1); color: var(--bg); }
+.h2 { background: var(--h2); }
+.h3 { background: var(--h3); }
+.h4 { background: var(--h4); }
+.h5 { background: var(--h5); }
+.h6 { background: var(--h6); }
+
+.text {
+	cursor: pointer;
+}
+
+.text:hover {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.text.is-hidden {
+	color: var(--muted);
+	font-style: italic;
+}
+
+.hidden-tag {
+	margin-left: 0.3rem;
+	font-size: 11px;
+}
+
+.muted {
+	color: var(--muted);
+}
+
+.toast {
+	position: fixed;
+	bottom: 12px;
+	left: 50%;
+	margin: 0;
+	padding: 0.4rem 0.85rem;
+	border-radius: 999px;
+	background: var(--ink);
+	color: var(--bg);
+	font-size: 12.5px;
+	translate: -50% 0;
+}

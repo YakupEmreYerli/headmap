@@ -1,0 +1,93 @@
+{
+  "extName": {
+    "message": "Headmap"
+  },
+  "extDesc": {
+    "message": "Sayfanın title, meta açıklaması, canonical, robots ve H1–H6 başlık ağacı tek bakışta. Hepsini tek tıkla kopyala ya da CSV indir."
+  },
+  "highlight": {
+    "message": "Başlıkları vurgula"
+  },
+  "reading": {
+    "message": "Sayfa okunuyor…"
+  },
+  "title": {
+    "message": "Title"
+  },
+  "metaDescription": {
+    "message": "Meta açıklaması"
+  },
+  "canonical": {
+    "message": "Canonical"
+  },
+  "robots": {
+    "message": "Robots"
+  },
+  "chars": {
+    "message": "$COUNT$ karakter",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "none": {
+    "message": "yok"
+  },
+  "noH1": {
+    "message": "H1 yok"
+  },
+  "multipleH1": {
+    "message": "$COUNT$ tane H1 var",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "noHeadings": {
+    "message": "Bu sayfada başlık yok."
+  },
+  "hidden": {
+    "message": "görünmüyor"
+  },
+  "cantRead": {
+    "message": "Bu sayfa okunamıyor (tarayıcının kendi sayfaları ve mağaza sayfaları kapalı)."
+  },
+  "empty": {
+    "message": "(boş)"
+  },
+  "headings": {
+    "message": "Başlıklar"
+  },
+  "field": {
+    "message": "Alan"
+  },
+  "level": {
+    "message": "Seviye"
+  },
+  "text": {
+    "message": "Metin"
+  },
+  "heading": {
+    "message": "Başlık"
+  },
+  "copyText": {
+    "message": "Metni kopyala"
+  },
+  "copyTextHint": {
+    "message": "Title, meta ve girintili başlık ağacı; bir belgeye ya da sohbete yapıştırmak için"
+  },
+  "copyTable": {
+    "message": "Tabloyu kopyala"
+  },
+  "copyTableHint": {
+    "message": "Excel ya da Google E-Tablolar'a yapıştırınca sütunlara ayrılır"
+  },
+  "copiedText": {
+    "message": "Metin kopyalandı"
+  },
+  "copiedTable": {
+    "message": "Tablo kopyalandı; E-Tablolar'a yapıştırabilirsin"
+  }
+}

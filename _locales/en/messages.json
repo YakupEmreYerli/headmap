@@ -1,0 +1,93 @@
+{
+  "extName": {
+    "message": "Headmap"
+  },
+  "extDesc": {
+    "message": "See a page's title, meta description, canonical, robots and H1–H6 outline at a glance. Copy everything in one click or export CSV."
+  },
+  "highlight": {
+    "message": "Highlight headings"
+  },
+  "reading": {
+    "message": "Reading the page…"
+  },
+  "title": {
+    "message": "Title"
+  },
+  "metaDescription": {
+    "message": "Meta description"
+  },
+  "canonical": {
+    "message": "Canonical"
+  },
+  "robots": {
+    "message": "Robots"
+  },
+  "chars": {
+    "message": "$COUNT$ chars",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "none": {
+    "message": "none"
+  },
+  "noH1": {
+    "message": "No H1"
+  },
+  "multipleH1": {
+    "message": "$COUNT$ H1s",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "noHeadings": {
+    "message": "This page has no headings."
+  },
+  "hidden": {
+    "message": "hidden"
+  },
+  "cantRead": {
+    "message": "This page can't be read (browser and store pages are off limits)."
+  },
+  "empty": {
+    "message": "(empty)"
+  },
+  "headings": {
+    "message": "Headings"
+  },
+  "field": {
+    "message": "Field"
+  },
+  "level": {
+    "message": "Level"
+  },
+  "text": {
+    "message": "Text"
+  },
+  "heading": {
+    "message": "Heading"
+  },
+  "copyText": {
+    "message": "Copy as text"
+  },
+  "copyTextHint": {
+    "message": "Title, meta and the indented outline; paste into a doc or a chat"
+  },
+  "copyTable": {
+    "message": "Copy as table"
+  },
+  "copyTableHint": {
+    "message": "Pastes into Excel or Google Sheets as columns"
+  },
+  "copiedText": {
+    "message": "Text copied"
+  },
+  "copiedTable": {
+    "message": "Table copied; paste it into a spreadsheet"
+  }
+}

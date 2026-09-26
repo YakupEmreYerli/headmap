@@ -3,7 +3,7 @@
     "message": "Headmap"
   },
   "extDesc": {
-    "message": "Sayfanın title, meta açıklaması, canonical, robots ve H1–H6 başlık ağacı tek bakışta. Hepsini tek tıkla kopyala ya da CSV indir."
+    "message": "Sayfanın title, meta açıklaması, canonical, robots ve H1–H6 başlık ağacı tek bakışta. Hepsini metin ya da tablo olarak kopyala."
   },
   "highlight": {
     "message": "Başlıkları vurgula"

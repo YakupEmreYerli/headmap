@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- 32 px: 2 px strokes on the pixel grid, short top folds. Mirror axis x = 16. -->
+  <rect width="32" height="32" rx="6" fill="#F5EEDF"/>
+  <g fill="none" stroke="#3A2A20" stroke-width="2" stroke-linejoin="round">
+    <path d="M5 8 L12 5 L16 7 L20 5 L27 8 L27 27 L20 24 L16 26 L12 24 L5 27 Z"/>
+    <path d="M12 5 V8 M20 5 V8"/>
+  </g>
+  <rect x="9" y="10" width="14" height="3" rx="1" fill="#C2562A"/>
+  <rect x="11" y="16" width="10" height="2" rx="1" fill="#3A2A20"/>
+  <rect x="13" y="20" width="6" height="2" rx="1" fill="#3A2A20"/>
+</svg>

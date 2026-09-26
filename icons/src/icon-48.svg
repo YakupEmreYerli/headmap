@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <!-- 48 px: 3 px strokes centred on half pixels. Mirror axis x = 24. -->
+  <rect x="1" y="1" width="46" height="46" rx="10" fill="#F5EEDF" stroke="#3A2A20" stroke-width="2"/>
+  <g fill="none" stroke="#3A2A20" stroke-width="3" stroke-linejoin="round">
+    <path d="M8.5 14 L18.5 9 L24 12 L29.5 9 L39.5 14 L39.5 39 L29.5 34 L24 37 L18.5 34 L8.5 39 Z"/>
+    <path d="M18.5 9 V13 M29.5 9 V13"/>
+  </g>
+  <rect x="13" y="16" width="22" height="4" rx="2" fill="#C2562A"/>
+  <rect x="16" y="22" width="16" height="3" rx="1.5" fill="#3A2A20"/>
+  <rect x="19" y="27" width="10" height="3" rx="1.5" fill="#3A2A20"/>
+</svg>

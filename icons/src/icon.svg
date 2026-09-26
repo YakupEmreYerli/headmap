@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Master, 128 px. 8 px transparent margin as the Chrome Web Store asks. Mirror axis x = 64. -->
+  <rect x="10" y="10" width="108" height="108" rx="24" fill="#F5EEDF" stroke="#3A2A20" stroke-width="4"/>
+  <g fill="none" stroke="#3A2A20" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M27 42 L52 30 L64 38 L76 30 L101 42 L101 98 L76 86 L64 94 L52 86 L27 98 Z"/>
+    <path d="M52 30 V40 M76 30 V40"/>
+  </g>
+  <g stroke-width="8" stroke-linecap="round">
+    <path d="M38 50 H90" stroke="#C2562A"/>
+    <path d="M46 63 H82" stroke="#3A2A20"/>
+    <path d="M54 76 H74" stroke="#3A2A20"/>
+  </g>
+</svg>

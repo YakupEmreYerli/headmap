@@ -1,15 +1,17 @@
-/* Headmap's own palette: a deep teal accent on neutral greys. The heading
-   badges use a separate, fixed scale so H-levels read the same everywhere. */
+/* Headmap's palette comes from the icon: cream paper, dark brown ink, an
+   orange heading line. Warnings use crimson so they never read as the orange
+   accent. The heading badges use a separate, fixed scale so H-levels read the
+   same everywhere. Contrast: every text pair is WCAG AA (4.5:1) or better. */
 :root {
-	--bg: #fcfcfb;
-	--surface: #f1f3f2;
-	--line: #e1e5e3;
-	--ink: #16201d;
-	--muted: #5c6b66;
-	--accent: #0f766e;
-	--accent-ink: #ffffff;
-	--warn: #c2410c;
-	--h1: #26282e;
+	--bg: #f8f3e9;
+	--surface: #efe7d7;
+	--line: #e2d7c3;
+	--ink: #33251c;
+	--muted: #6e5d50;
+	--accent: #b64b1f;
+	--accent-ink: #fff9f0;
+	--warn: #b3183a;
+	--h1: #33251c;
 	--h2: #d97a00;
 	--h3: #1f8a3a;
 	--h4: #2563c9;
@@ -20,15 +22,15 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg: #121816;
-		--surface: #1a221f;
-		--line: #2b3531;
-		--ink: #eef3f1;
-		--muted: #9aaaa4;
-		--accent: #2dd4bf;
-		--accent-ink: #062521;
-		--warn: #fb923c;
-		--h1: #e8eaee;
+		--bg: #1c1612;
+		--surface: #28201a;
+		--line: #3d3229;
+		--ink: #f2e9da;
+		--muted: #b2a290;
+		--accent: #ee8a57;
+		--accent-ink: #231510;
+		--warn: #ff7089;
+		--h1: #f2e9da;
 		color-scheme: dark;
 	}
 }
@@ -124,7 +126,7 @@ button.primary {
 	width: 13px;
 	height: 13px;
 	border-radius: 50%;
-	background: #fff;
+	background: var(--muted);
 	transition: transform 0.15s;
 }
 
@@ -133,6 +135,7 @@ button.primary {
 }
 
 .switch input:checked + .switch-track::after {
+	background: var(--accent-ink);
 	transform: translateX(13px);
 }
 

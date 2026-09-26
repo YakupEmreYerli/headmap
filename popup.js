@@ -45,7 +45,7 @@ function highlightHeadings(on) {
 	document.getElementById(STYLE_ID)?.remove();
 	document.querySelectorAll('.headmap-badge').forEach((el) => el.remove());
 	if (!on) return;
-	const colors = { 1: '#26282e', 2: '#d97a00', 3: '#1f8a3a', 4: '#2563c9', 5: '#7c4dcc', 6: '#8a8f98' };
+	const colors = { 1: '#33251c', 2: '#d97a00', 3: '#1f8a3a', 4: '#2563c9', 5: '#7c4dcc', 6: '#8a8f98' };
 	const style = document.createElement('style');
 	style.id = STYLE_ID;
 	style.textContent = Object.entries(colors)
@@ -68,7 +68,7 @@ function revealHeading(index) {
 	if (!el) return;
 	el.scrollIntoView({ behavior: 'smooth', block: 'center' });
 	const previous = el.style.backgroundColor;
-	el.style.backgroundColor = 'rgba(45, 212, 191, 0.3)';
+	el.style.backgroundColor = 'rgba(194, 86, 42, 0.25)';
 	setTimeout(() => (el.style.backgroundColor = previous), 1400);
 }
 

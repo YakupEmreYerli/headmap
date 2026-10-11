@@ -15,7 +15,7 @@ A small extension for Brave, Chrome and Edge.
 
 <p align="center"><a href="README.tr.md">Türkçe</a></p>
 
-![Headmap open on MDN's heading elements page, with headings highlighted on the page](docs/screenshot-light.png)
+![Headmap: title, meta and the H1–H6 outline of any page, at a glance](docs/banner.en.png)
 
 ## Features
 
@@ -30,6 +30,8 @@ A small extension for Brave, Chrome and Edge.
 - **Copy as table.** The same data as tab-separated rows; Excel and Google Sheets split it into columns.
 - **Light and dark.** Follows the system theme.
 - **English and Turkish.** Follows the browser language.
+
+![Headmap open on MDN's heading elements page, with headings highlighted on the page](docs/screenshot-light.png)
 
 ![The same view in dark mode](docs/screenshot-dark.png)
 

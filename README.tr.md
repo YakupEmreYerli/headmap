@@ -9,7 +9,7 @@ Brave, Chrome ve Edge için küçük bir eklenti.
 
 <p align="center"><a href="README.md">English</a></p>
 
-![Headmap, MDN'in başlık öğeleri sayfasında açık; sayfadaki başlıklar vurgulanmış](docs/screenshot-light.png)
+![Headmap: bir sayfanın title, meta ve H1–H6 başlık ağacı tek bakışta](docs/banner.tr.png)
 
 ## Özellikler
 
@@ -24,6 +24,8 @@ Brave, Chrome ve Edge için küçük bir eklenti.
 - **Tabloyu kopyala.** Aynı bilgi sekmeyle ayrılmış satırlar olarak; Excel ve Google E-Tablolar sütunlara böler.
 - **Açık ve koyu tema.** Sistem temasını izler.
 - **Türkçe ve İngilizce.** Tarayıcının dilini izler.
+
+![Headmap, MDN'in başlık öğeleri sayfasında açık; sayfadaki başlıklar vurgulanmış](docs/screenshot-light.png)
 
 ![Aynı görünüm koyu temada](docs/screenshot-dark.png)
 

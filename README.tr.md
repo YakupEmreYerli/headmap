@@ -46,14 +46,12 @@ yüklemek için:
 4. **Paketlenmemiş öğe yükle**'ye tıkla ve depo klasörünü seç.
 5. Eklentiler menüsünden Headmap'i sabitle, herhangi bir sayfada tıkla.
 
-Firefox (140 ya da sonrası):
+Firefox (140 ya da sonrası): son sürümdeki imzalı
+[`headmap.xpi`](https://github.com/YakupEmreYerli/headmap/releases/latest/download/headmap.xpi) dosyasını indir,
+bir Firefox penceresine sürükle ve **Ekle**'ye bas. Yeniden başlatınca da kurulu kalır.
 
-1. Bu depoyu indir ya da klonla.
-2. `about:debugging#/runtime/this-firefox` adresini aç.
-3. **Geçici Eklenti Yükle…**'ye tıkla ve depo klasöründeki `manifest.json` dosyasını seç.
-4. Eklentiler menüsünden Headmap'i sabitle, herhangi bir sayfada tıkla.
-
-Firefox geçici eklentiyi kapanınca kaldırır; yeniden başlattıktan sonra tekrar yükle.
+Kaynaktan denemek istersen `about:debugging#/runtime/this-firefox` adresini aç, **Geçici Eklenti Yükle…**'ye
+tıkla ve `manifest.json` dosyasını seç; Firefox geçici eklentiyi kapanınca kaldırır.
 
 ## Geliştirme
 

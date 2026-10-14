@@ -52,14 +52,12 @@ Edge:
 4. Click **Load unpacked** and pick the repository folder.
 5. Pin Headmap from the extensions menu and click it on any page.
 
-Firefox (140 or newer):
+Firefox (140 or newer): download the signed
+[`headmap.xpi`](https://github.com/YakupEmreYerli/headmap/releases/latest/download/headmap.xpi) from the latest
+release and drag it into a Firefox window, then confirm **Add**. It stays installed after a restart.
 
-1. Download or clone this repository.
-2. Open `about:debugging#/runtime/this-firefox`.
-3. Click **Load Temporary Add-on…** and pick `manifest.json` in the repository folder.
-4. Pin Headmap from the extensions menu and click it on any page.
-
-Firefox removes a temporary add-on when it closes, so load it again after a restart.
+To run Firefox from source instead, open `about:debugging#/runtime/this-firefox`, click **Load Temporary
+Add-on…** and pick `manifest.json`; Firefox removes a temporary add-on when it closes.
 
 ## Project layout
 

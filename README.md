@@ -4,7 +4,7 @@
 
 <p align="center">
 See a page's title, meta description, canonical, robots and H1–H6 outline at a glance.<br>
-A small extension for Brave, Chrome and Edge.
+A small extension for Brave, Chrome, Edge and Firefox.
 </p>
 
 <p align="center">
@@ -39,17 +39,27 @@ A small extension for Brave, Chrome and Edge.
 
 Headmap asks for two permissions, `activeTab` and `scripting`. It reads the current tab only when you open
 the popup, keeps nothing and sends nothing: there is no background script, no storage and no network
-request. Browser pages (`chrome://`, `brave://`) and extension stores can't be read, by browser rule.
+request. Browser pages (`chrome://`, `brave://`, `about:`) and extension stores can't be read, by browser rule.
 
 ## Install
 
-Headmap is not in the Chrome Web Store yet. To load it from source:
+Headmap is not in the Chrome Web Store or on Firefox Add-ons yet. To load it from source in Brave, Chrome or
+Edge:
 
 1. Download or clone this repository.
 2. Open `chrome://extensions` (Brave: `brave://extensions`, Edge: `edge://extensions`).
 3. Turn on **Developer mode**.
 4. Click **Load unpacked** and pick the repository folder.
 5. Pin Headmap from the extensions menu and click it on any page.
+
+Firefox (140 or newer):
+
+1. Download or clone this repository.
+2. Open `about:debugging#/runtime/this-firefox`.
+3. Click **Load Temporary Add-on…** and pick `manifest.json` in the repository folder.
+4. Pin Headmap from the extensions menu and click it on any page.
+
+Firefox removes a temporary add-on when it closes, so load it again after a restart.
 
 ## Project layout
 

@@ -4,7 +4,7 @@
 
 <p align="center">
 Bir sayfanın title, meta açıklaması, canonical, robots ve H1–H6 başlık ağacı tek bakışta.<br>
-Brave, Chrome ve Edge için küçük bir eklenti.
+Brave, Chrome, Edge ve Firefox için küçük bir eklenti.
 </p>
 
 <p align="center"><a href="README.md">English</a></p>
@@ -33,17 +33,27 @@ Brave, Chrome ve Edge için küçük bir eklenti.
 
 Headmap iki izin ister: `activeTab` ve `scripting`. Açık sekmeyi yalnızca açılır pencereyi açtığında okur,
 hiçbir şey saklamaz, hiçbir yere göndermez: arka plan betiği, depolama ya da ağ isteği yok. Tarayıcının
-kendi sayfaları (`chrome://`, `brave://`) ve eklenti mağazaları tarayıcı kuralı gereği okunamaz.
+kendi sayfaları (`chrome://`, `brave://`, `about:`) ve eklenti mağazaları tarayıcı kuralı gereği okunamaz.
 
 ## Kurulum
 
-Headmap henüz Chrome Web Mağazası'nda değil. Kaynaktan yüklemek için:
+Headmap henüz Chrome Web Mağazası'nda da Firefox Eklentileri'nde de yok. Brave, Chrome ya da Edge'e kaynaktan
+yüklemek için:
 
 1. Bu depoyu indir ya da klonla.
 2. `chrome://extensions` adresini aç (Brave: `brave://extensions`, Edge: `edge://extensions`).
 3. **Geliştirici modu**nu aç.
 4. **Paketlenmemiş öğe yükle**'ye tıkla ve depo klasörünü seç.
 5. Eklentiler menüsünden Headmap'i sabitle, herhangi bir sayfada tıkla.
+
+Firefox (140 ya da sonrası):
+
+1. Bu depoyu indir ya da klonla.
+2. `about:debugging#/runtime/this-firefox` adresini aç.
+3. **Geçici Eklenti Yükle…**'ye tıkla ve depo klasöründeki `manifest.json` dosyasını seç.
+4. Eklentiler menüsünden Headmap'i sabitle, herhangi bir sayfada tıkla.
+
+Firefox geçici eklentiyi kapanınca kaldırır; yeniden başlattıktan sonra tekrar yükle.
 
 ## Geliştirme
 
